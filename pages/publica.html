@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Gaming</title>
+    <link rel="shortcut icon" href="..\assets\img\ico.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/CSS" href="..\style.css">
+</head>
+
+<body>
+    <div id="html" class="containerSinAside">
+    <!--COMENTARIO: Acá va el cuerpo de la página-->
+    <header>
+
+    <div class="centrarBanner">
+        <img class="banner" src="..\assets\img\banner.png" alt="Banner NFT Gaming">
+    </div>
+        
+    
+        <nav>
+            <ul class="centrarMenu">
+                <li><a class="menu menuAnim" href="..\index.html">Noticias</a></li>
+                <li><a class="menu menuAnim" href="playtoearn.html"> List Play to Earn</a></li>
+                <li><a class="menu menuAnim" href="tokens.html"> Best tokens</a></li>
+                <li><a class="menu menuAnim" href="videos.html"> Videos NFT Gaming</a></li>
+                <li><a class="menuActivo menu menuAnim" href="publica.html"> Publica tu proyecto</a></li>
+                <li><a class="menu menuAnim" href="contactanos.html"> Contactanos</a></li>
+            </ul>
+
+            <div class="pagHambur">
+                <!-- Menu Hamburguesa -->
+                <input type="checkbox" id="menuHamb">
+                <label class="colorHambur" for="menuHamb">☰</label>
+                <ul id="hoverHambur">
+                    <li><a class="menuH menuAnim" href="..\index.html">Noticias</a></li>
+                    <li><a class="menuH menuAnim" href="playtoearn.html"> List Play to Earn</a></li>
+                    <li><a class="menuH menuAnim" href="tokens.html"> Best tokens</a></li>
+                    <li><a class="menuH menuAnim" href="videos.html"> Videos NFT Gaming</a></li>
+                    <li><a class="menuH menuAnim" href="publica.html"> Publica tu proyecto</a></li>
+                    <li><a class="menuH menuAnim" href="contactanos.html"> Contactanos</a></li>
+                </ul>
+            </div>
+                    
+            </nav>
+    
+
+        <main>
+            <h1 class="tituloPagina">Publica tu proyecto</h1>
+        </main>
+    </header>
+
+
+    <section>
+        <div class="centrarForm">
+    <fieldset class="formFondo">
+        <p class="comentarios">Todos los campos deben ser completados, una ves enviado el formulario nos dispondremos de 48hs hábiles para
+            analizar y aprobar tu proyecto</p>
+        <form>
+            <br>
+
+
+            <label class="Label" for="nombreproyecto">Nombre del proyecto: </label>
+            <input class="inputBox" type="text" id="nombreproyecto" placeholder="Nombre de tu proyecto" required />
+            <br>
+            <br>
+            <label class="Label" for="emailproyecto">Email: </label>
+            <input class="inputBox" type="email" id="emailproyecto" placeholder="tucorreo@gmail.com" required />
+            <br>
+            <br>
+            <label class="Label" for="nombreceo">Nombre y Apellideo del CEO: </label>
+            <input class="inputBox" type="text" id="nombreceo" placeholder="Nombre y Apellido del CEO" required />
+            <br>
+            <br>
+            <label class="Label" for="nacionalidadp">Nacionalidad de precedencia: </label>
+            <input class="inputBox" type="text" id="nacionalidadp" placeholder="Nacionalidad del CEO" required />
+            <br>
+            <br>
+            <label class="Label" for="tipojuego">Estilo del juego: </label>
+            <input class="inputBox" type="text" id="tipojuego" placeholder="RPG, CARS, DEFI, ETC.." required />
+            <br>
+            <br>
+            <label class="Label" for="paginaweb">Pagina Web del proyecto: </label>
+            <input class="inputBox" type="text" id="paginaweb" placeholder="www.tuproyecto.com" required />
+            <br>
+            <br>
+            <label class="Label" for="token">Posee token? Si/No (Contrato): </label>
+            <input class="inputBox" type="text" id="token" placeholder="0x0bc89aa98ad94e6798ec822d0814d934ccd0c0ce" required />
+            <br>
+            <br>
+            <label class="Label" for="lanzamiento">Fecha estimada de lanzamiento: </label>
+            <input type="date" id="lanzamiento" placeholder="25/05/2021" required />
+            <br>
+            <br>
+            <label class="Label" for="auditoria">Proyecto auditado? Si/No (Link certificado): </label>
+            <input class="inputBox" type="text" id="auditoria" placeholder="https://auditoriadeproyecto.com" required />
+            <br>
+            <br>
+            <label class="Label" for="videos">Links Videos: </label>
+            <input class="inputBox" type="text" id="videos" placeholder="https://youtube.com, https://youtube.com" required />
+            <br>
+            <br>
+            <label class="Label" for="facebook">Link página de Facebook: </label>
+            <input class="inputBox" type="text" id="facebook" placeholder="https://facebook.com/tuproyecto" required />
+            <br>
+            <br>
+            <label class="Label" for="discord">Link página de Discord: </label>
+            <input class="inputBox" type="text" id="discord" placeholder="https://discord.com/tuproyecto" required />
+            <br>
+            <br>
+            <label class="Label" for="telegram">Link página de Telegram: </label>
+            <input class="inputBox" type="text" id="telegram" placeholder="https://telegram.com/tuproyecto" required />
+            <br>
+            <br>
+            <label class="Label" for="instagram">Link página de Instagram: </label>
+            <input class="inputBox" type="text" id="instagram" placeholder="https://instagram.com/tuproyecto" required />
+            <br>
+            <br>
+            <label class="Label" for="etapa">Etapa de desarrollo: </label>
+            <select id="etapa">
+                <option value="" hidden></option>
+                <option value="Alpha">Alpha</option>
+                <option value="Beta">Beta</option>
+                <option value="Cancelled">Cancelled</option>
+                <option value="Development">Development</option>
+                <option value="Live">Live</option>
+                <option value="Presale">Presale</option>
+            </select>
+            <br>
+            <br>
+
+            <p class="comentarios">Resumen de tu proyecto, propuestas, composición de staff, información útil para validar tu proyecto:</p>
+            <br>
+            <textarea class="textAreaDesktop" rows="25" cols="85" id="message"
+                placeholder="Soy Peperepe, CEO del proyecto X y tengo las siguientes intenciones... Detallar lo mejor posible para elevar la confiabilidad del proyecto"
+                required></textarea>
+
+            <textarea class="textAreaMobile" rows="15" cols="30" id="message"
+                placeholder="Soy Peperepe, CEO del proyecto X y tengo las siguientes intenciones... Detallar lo mejor posible para elevar la confiabilidad del proyecto"
+                required></textarea>
+
+            <br>
+            <br>
+            <p class="comentarios">Acepto los terminos y condiciones</p>
+            <input type="checkbox" id="terminos" required>
+            <br>
+
+            <div class="botonesFormMobile">
+            <input class="botonFormulario pagAnim" type="submit" value="Enviar formulario" />
+            <input class="botonFormulario pagAnim" type="reset" value="Limpiar formulario" />
+            <input class="botonFormulario pagAnim" type="button" value="Sin acciones" />
+            </div>
+        </form>
+    
+    </div>
+
+
+
+
+    </fieldset>
+    <br>
+
+</section>
+
+    
+
+        <footer>
+            <div class="redesSociales">
+            <p class="tituloRedes"><b>Redes Sociales</p></b>
+            
+                <ul>
+                    <li class="logoRedes"><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Link a Facebook"></a></li>
+    
+                    <li class="logoRedes"><a href="https://web.telegram.org/" target="_blank"><img src="../assets/img/telegram.png" alt="Link a Telegram"></a></li>
+    
+                    <li class="logoRedes "><a href="https://discord.com/" target="_blank"><img src="../assets/img/discord.png" alt="Link a Discord"></a></li>
+    
+                    <li class="logoRedes"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Link a Instagram"></a></li>
+    
+                </ul>
+            
+    
+            <p class="derechos">©2022 NFT GAMING</p>
+        </div>
+        </footer>
+    </div>
+    </body>
+    
+    </html>

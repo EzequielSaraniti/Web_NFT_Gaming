@@ -1,0 +1,930 @@
+* {
+   /* Reset de margenes, bordes, etc.. */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* importamos font "Roboto" */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+
+* {
+   /* Limpiamos márgenes y estilos provenientes de HTML */
+   text-decoration: none;
+   list-style-type: none;
+}
+
+
+* {
+   /* Seteamos Fonts "Rotobo" en toda la página */
+   font-family: 'Roboto', sans-serif;
+}
+
+#html {
+   /* Acomodamos la página para que siempre este centrada */
+    
+   /* Color de fondo de la página */
+   background-color: #191919;
+}
+
+.centrarBanner {
+   display:flex;
+   flex-direction: row;
+   justify-content:center;
+   align-content: center;
+   background-color: #1b0404;
+   /* Definidmos como elemento de bloque */
+   
+   /* Definimos max Banner */
+   
+   /* Definimos margen izquierdo */
+   
+}
+
+.centrarMenu{
+   display:flex;
+   justify-content:center;
+   align-content: space-evenly;
+   background-color: #1b0404;
+
+
+   /* Definidmos como elemento de bloque */
+   
+   /* Definimos max Banner */
+   
+   /* Definimos margen izquierdo */
+}
+
+.textAreaDesktop{
+   display: block;
+}
+
+.textAreaMobile {
+   display: none;
+}
+
+.activarMobile{
+   display: none;
+}
+
+.centrarCambioPag{
+   display:flex;
+   justify-content:center;
+   align-content: space-evenly;
+
+
+   /* Definidmos como elemento de bloque */
+   
+   /* Definimos max Banner */
+   
+   /* Definimos margen izquierdo */
+}
+
+.menu {
+   /* Definimos colores */
+   color:rgb(247, 250, 217);
+   /* Definimos bordes */
+   /* Definimos estilo de fuente, tamaño, etc */
+   font-weight: bold;
+   font-size: 17px;
+   text-align: center;
+   line-height: 2;
+   /* Definimos posición, margenes, etc */
+   float: left;
+   margin-left: 31px;
+   padding-left: 9px;
+   padding-right: 9px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
+.menuAnim:hover {
+   /* Efecto hover sobre "Nav Menu" */
+color: #cc7746;
+
+
+}
+
+.menuActivo {
+   -webkit-text-stroke: 1px rgb(234, 236, 211);
+}
+
+.tituloPagina {
+   /* Definimos colores */
+   color:rgb(255, 255, 255);
+   background-color: #1A374D;
+   /* Centramos Textos y definimos tamaño de fuente */
+   text-align: center;
+   font-size: 30px;
+   /* Posicionamos bloque y definimos ancho */
+   margin-bottom: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   /* Definimos estilo de borde redondeado */
+   
+   
+}
+
+.imgNoticia {
+   /* Definimos posición */
+   position:relative;
+   
+   
+   /* Definimos bloque en linea */
+   display: inline-block;
+   /* Definimos tamaño */
+   width: 450px;
+   height: 250px;
+}
+
+.marcoNoticias {
+   /* Definimos posición */
+   position:absolute;
+   top: 0px; left: 0px;
+   /* Z index 1 para enviarlo al fondo */
+   z-index: 1;
+   
+}
+
+.imgNoticiaContenido {
+   /* Definimos posición */
+   position:absolute;
+   top: 146px; left: 28px;
+   /* Z index 2 para enviarlo adelante */
+   z-index: 2;
+}
+
+.contenidoNoticia {
+   /* Definimos tamaño */
+   width: 450px;
+   height: 500px;
+   /* Definimos estilos de texto */
+   text-align: center;
+   font-size: 12px;
+   line-height: 1.5;
+   /* Overflow para que el texto sobrante no se vea */
+   overflow: hidden;
+   /* Definimos bordes */
+   border: solid 1px rgb(255, 255, 255);
+   /* Definimos posición */
+   position:relative;
+   left: 40px;
+   /* Definimos bloque en linea */
+   display: inline-block;
+   
+}
+
+.colorNoticia{
+   color: rgb(255, 255, 255);
+}
+
+.noticiaActual{
+   /* Usamos este elemento para un Titulo de noticia */
+   /* Definimos color de fondo y bordes */
+   background-color: #1A374D;
+   /* Tamaño del bloque*/
+   width: 450px;
+   height: 20px;
+   /* Estilos de texto */
+   text-align: center;
+   font-size: 16px;
+   color: #ffffff;
+   /* Overflow para que el texto sobrante no se vea */
+   overflow: hidden;
+   /* Definimos bordes */
+   border: solid 1px #1A374D;
+   /* Definimos posición */
+   position:relative;
+   
+   
+}
+
+.fechaNotActual {
+   /* Usamos este elemento para la fecha de la noticia */
+   color: rgb(247, 250, 217);
+   /* Definimos color de fondo y bordes */
+   background-color: #6998AB;
+   border: solid 1px black;
+   /* Tamaño del bloque*/
+   width: 430px;
+   height: 20px;
+   /* Estilos de texto */
+   font-size: 13px;
+   font-style: italic;
+   text-align: center;
+   /* Posición del bloque */
+   margin-top: 2px;
+   margin-left: 10px;
+   position:relative;
+   /* Overflow para que el texto sobrante no se vea */
+   overflow: hidden;
+   /* Definimos bordes redondeados */
+   border-radius: 20px;
+   
+}
+
+.cambioPag {
+   display: flex;
+   justify-content:center;
+   align-content: center;
+   /* Definimos ancho del bloque */
+   /* Definimos ancho y alto del padding */
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-left: 10%;
+   
+}
+
+.pagPrev {
+   /* Definimos color de fondo, texto, bordes */
+   color:rgb(255, 255, 255);
+   background-color: rgb(10, 15, 66);
+   border: solid 1px rgb(160, 219, 253);
+   float: left;
+   /* Definimos posición y tamaño */
+   margin-right: 50px;
+   padding-left: 9px;
+   padding-right: 9px;
+   /* Definimos estilos de fuente */
+   font-weight: bold;
+   font-size: 10;
+   line-height: 2;
+}
+
+.Pag {
+   /* Definimos color de fondo, texto, bordes */
+   background-color: #2D4263;
+   border: solid 1px rgb(160, 219, 253);
+   color:rgb(255, 255, 255);
+   float: left;
+   /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
+   font-weight: bold;
+   font-size: 10;
+   line-height: 2;
+   /* Definimos posición y tamaño */
+   margin-right: 50px;
+   padding-left: 9px;
+   padding-right: 9px;
+   
+
+}
+
+.pagnone {
+   /* Este elemento se usa para páginas no accesibles */
+   background-color: rgb(172, 172, 172);
+}
+
+.PagActual {
+   /* Definimos color de fondo, texto, bordes */
+   background-color: rgb(172, 172, 172);
+   border: solid 1px rgb(160, 219, 253);
+   color:rgb(255, 255, 255);
+   /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
+   float: left;
+   font-weight: bold;
+   font-size: 10;
+   line-height: 2;
+   /* Definimos posición y tamaño */
+   margin-right: 50px;
+   padding-left: 9px;
+   padding-right: 9px;
+}
+
+.pagAnim:hover {
+   /* Efecto hover sobre "Nº pag noticias" */
+   color: rgb(255, 255, 255);
+   background-color: grey;
+   border-bottom: solid 1px rgb(255, 255, 255);
+   }
+
+.redesSociales {
+   /* Definimos posición y tamaño */
+   
+   padding-top: 20px;
+}
+
+footer {
+   background-color: #1b0404;
+}
+
+.tituloRedes {
+   /* Definimos estilos de fuente */
+   font-size: 20px;
+   text-align: center;
+   /* Definimos Color de letra */
+   color: #ffffff;
+}
+
+.logoRedes {
+   /* Definimos posición de texto */
+   float: left;
+   /* Definimos posición de box */
+   padding-right: 18px;
+}
+
+
+.derechos {
+   /* Definimos posición, negrita y color de texto */
+   text-align: center;
+   font-weight: bold;
+   color: #ffffff;
+   padding-bottom: 30px;
+}
+
+.tablaPrincipal {
+   margin-top: 5px;
+}
+
+.tablaTokens {
+   margin-left: 100px;
+}
+
+.centrarTabla {
+   display: flex;
+   justify-content:center;
+}
+
+.centrarForm {
+   display: flex;
+   justify-content:center;
+}
+
+.fechaActualizacion {
+   color: white;
+   margin-top: 20px;
+   margin-left: 20px;
+   text-align: center;
+}
+
+.tituloTabla {
+   color:rgb(255, 255, 255);
+   background-color: #1A374D;
+   border-radius: 20px;
+   padding: 5px 20px 5px 20px;
+}
+
+.contenidoTabla {
+   text-align:center;
+   padding: 25px 10px 25px 10px;
+   background-color: rgb(193, 216, 218);
+   border-radius: 20px;
+   color:#1A374D;
+}
+
+.contenidoTabla2 {   
+   text-align:center;
+   padding: 25px 10px 25px 10px;
+   background-color: rgb(149, 190, 218);
+   border-radius: 20px;
+   color:#1A374D;
+}
+
+.logoTabla {
+   padding-left: 10px;
+}
+ 
+.linkWeb {
+   font-weight: bold;
+   color:#1A374D;
+}
+ 
+.linkWebAnim:hover {
+   /* Efecto hover sobre "Nº pag noticias" */
+   color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+
+   }
+ 
+   .linkWebAnimInt:hover {
+      /* Efecto hover sobre "Nº pag noticias" */
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
+      border-bottom: solid 1px rgb(255, 255, 255);
+      }
+
+.videos {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+    
+.videosCont {
+   width: 450;
+   height: 315;
+   padding: 15px 15px 15px 15px;
+}
+
+.subTitulo {
+   color: white;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+fieldset {
+   width: 900px;
+   margin: 20px 0px 20px 60px;
+   padding: 10px 10px 10px 10px;
+   
+}
+
+form {
+   margin-left: 50px;
+}
+
+.comentarios {
+   color: white;
+   font-size: 12px;
+   font-style: italic;
+}
+
+.formFondo {
+   background-color: rgb(49, 49, 49);
+}
+
+.Label {
+   color: white;
+   display: inline-flex;
+   width: 300px;
+   text-align:left;
+}
+   
+.inputBox {
+   display: inline-flex;
+   width: 500px;
+   height: 25px;
+}
+
+.botonFormulario {
+   /* Definimos colores */
+   color:rgb(255, 255, 255);
+   background-color: #1A374D;
+   /* Definimos bordes */
+   border: solid 1px rgb(160, 219, 253);
+   border-radius: 5px 50px / 50px 15px;
+   /* Definimos estilo de fuente, tamaño, etc */
+   font-weight: bold;
+   font-size: 10;
+   text-align: center;
+   line-height: 2;
+   /* Definimos posición, margenes, etc */
+   float: left;
+   margin-left: 31px;
+   padding-left: 9px;
+   padding-right: 9px;
+   margin-top: 10px;
+}
+
+.botonFormularioAnim:hover {
+   /* Efecto hover sobre "Nav Menu" */
+color: rgb(255, 255, 255);
+background-color: grey;
+border-bottom: solid 5px rgb(226, 230, 17);
+}
+
+.formContacto {
+   width: 600px;
+   height: 700px;
+}
+
+.LabelContacto {
+   color: rgb(255, 255, 255);
+   display: inline-flex;
+   width: 100px;
+   text-align:left;
+}
+
+.SexoContacto {
+   color: rgb(255, 255, 255);
+   padding: 3px;
+}
+
+.inputBoxContacto {
+   display: inline-flex;
+   width: 250px;
+   height: 25px;
+   border: solid 1px rgb(10, 15, 66);
+   border-radius: 5px;
+}
+
+.inputBoxmensaje {
+   display: inline-flex;
+   border: solid 1px rgb(10, 15, 66);
+   border-radius: 5px;
+}
+
+.centerContacto {
+   margin-top: 40px;
+   margin-left: 150px;
+}
+
+#centrarNoticias{
+   display:flex;
+   justify-content:center;
+}
+footer {
+   display:flex;
+   justify-content:center;
+}
+
+.container {
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-rows: auto auto auto; 
+   gap: 0px 0px; 
+   grid-template-areas: 
+     "header header header"
+     "section section aside"
+     "footer footer footer"; 
+ }
+
+ .containerSinAside {
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-rows: auto auto auto; 
+   gap: 0px 0px; 
+   grid-template-areas: 
+     "header header header"
+     "section section section"
+     "footer footer footer"; 
+ }
+
+section { grid-area: section; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+header { grid-area: header; }
+
+.tituloAside {
+   display:flex;
+   color: white;
+   margin-bottom: 20px;
+}
+
+.contenedorAside {
+   display: flex;
+   flex-direction: row;
+   padding-top: 20px;
+   border-top: solid 1px white;
+   width: 400px;
+   padding-bottom: 20px;
+}
+
+.contenidoAside {
+   display: flex;
+   align-items: center;
+   color: white;
+   margin-left: 10px;
+}
+
+.buscador {
+   position: relative;
+   right: 50px;
+   margin-bottom: 20px;
+   
+}
+
+/* Menu hamburguesa */
+
+#hoverHambur{
+   display: none;
+ }
+ 
+ input:checked  ~ #hoverHambur{
+   display:block;
+ }
+
+ #menuHamb {
+   display: none;
+ }
+
+ .colorHambur {
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+ }
+
+ .pagHambur {
+   display: block;
+   background: #1b0404;
+   margin: 0;
+   list-style: none;
+   border-bottom: 1px solid grey;
+ }
+
+ .menuH {
+    display: flex;
+    width: 180px;
+    height: 50px;
+   /* Definimos colores */
+   color:rgb(247, 250, 217);
+   /* Definimos bordes */
+   /* Definimos estilo de fuente, tamaño, etc */
+   font-weight: bold;
+   justify-content:center;
+   align-items: center;
+   font-size: 15px;
+   line-height: 3;
+   /* Definimos posición, margenes, etc */
+   padding: 10px 15px 10px 15px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #1A374D;
+   
+}
+
+.pagHambur {
+   display: none;
+   justify-content:center;
+   align-content: center;
+   padding-bottom: 20px;
+}
+
+.tablaMobile {
+   display: grid;
+   width: 300px;
+   margin-top: 30px;
+   margin-left: 20px;
+   margin-bottom: 30px;
+   border: wheat solid 1px;
+   grid-template-columns:1fr, 1fr;
+   gap: 0px 0px;
+   color: white;
+   grid-template-areas: 
+        "tituloTablaMobile contenidoTablaMobile";
+}
+
+.tituloTablaMobile{
+   font-weight: bold;
+   padding: 15px 10px 15px 10px;
+   background-color: rgb(81, 82, 80);
+   border: white solid 1px;
+}
+
+.contenidoTablaMobile{
+   font-weight: bold;
+   padding: 15px 10px 15px 10px;
+   background-color: rgb(102, 137, 201);
+   border: white solid 1px;
+}
+
+.centrarLogoMobile{
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+.tituloTabla_Mobile { grid-area: tituloTablaMobile; }
+.contenidoTabla_Mobile { grid-area: contenidoTablaMobile; }
+
+
+
+@media screen and (max-width: 550px) {
+   .container {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: auto auto auto; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "header header header"
+        "section section section"
+        "footer footer footer"; 
+    }
+   aside {
+      display: none;
+   }
+
+   .menu {
+      display: none;
+   }
+
+   .pagHambur {
+      display: flex;
+      justify-content:start;
+      align-content: center;
+      padding-bottom: 10px;
+      padding-left: 8px;
+   }
+
+   #centrarNoticias {
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+   }
+
+   .mobileNoticia {
+      display:flex;
+      justify-content: center;
+   }
+
+
+
+   .marcoNoticias {
+      display: none;
+   }
+
+   .imgNoticiaContenido{
+      width: 280px;
+      height: 220px;
+      /* Definimos posición */
+      position:absolute;
+      top: 0%; left: 20%;
+      /* Z index 2 para enviarlo adelante */
+      z-index: 2;
+   }
+
+   .contenidoNoticia{
+         /* Definimos tamaño */
+         width: 280px;
+         height: 750px;
+         /* Definimos estilos de texto */
+         text-align: center;
+         font-size: 12px;
+         line-height: 1.5;
+         /* Overflow para que el texto sobrante no se vea */
+         overflow: hidden;
+         /* Definimos bordes */
+         border: solid 1px rgb(255, 255, 255);
+         /* Definimos posición */
+         position:relative;
+         left: 20%;
+         /* Definimos bloque en linea */
+         display: inline-block;
+   }
+
+   .noticiaActual{
+      /* Usamos este elemento para un Titulo de noticia */
+      /* Definimos color de fondo y bordes */
+      background-color: #1A374D;
+      /* Tamaño del bloque*/
+      width: 280px;
+      height: 40px;
+      /* Estilos de texto */
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      /* Overflow para que el texto sobrante no se vea */
+      overflow: hidden;
+      /* Definimos bordes */
+      border: solid 1px #1A374D;
+      /* Definimos posición */
+      position:relative;
+      
+      
+   }
+   
+   .fechaNotActual {
+      /* Usamos este elemento para la fecha de la noticia */
+      color: rgb(247, 250, 217);
+      /* Definimos color de fondo y bordes */
+      background-color: #6998AB;
+      border: solid 1px black;
+      /* Tamaño del bloque*/
+      width: 260px;
+      height: 20px;
+      /* Estilos de texto */
+      font-size: 13px;
+      font-style: italic;
+      text-align: center;
+      /* Posición del bloque */
+      margin-top: 2px;
+      margin-left: 10px;
+      position:relative;
+      /* Overflow para que el texto sobrante no se vea */
+      overflow: hidden;
+      /* Definimos bordes redondeados */
+      border-radius: 20px;
+      
+   }
+
+   .cambioPag {
+      display: flex;
+      justify-content:center;
+      align-content: center;
+      /* Definimos ancho del bloque */
+      /* Definimos ancho y alto del padding */
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 10%; 
+   }
+
+   .pagPrev {
+      /* Definimos color de fondo, texto, bordes */
+      color:rgb(255, 255, 255);
+      background-color: rgb(10, 15, 66);
+      border: solid 1px rgb(160, 219, 253);
+      float: left;
+      /* Definimos posición y tamaño */
+      margin-right: 10px;
+      margin-left: -30px;
+      padding-left: 9px;
+      padding-right: 9px;
+      /* Definimos estilos de fuente */
+      font-weight: bold;
+      font-size: 10;
+      line-height: 2;
+   }
+   
+   .Pag {
+      /* Definimos color de fondo, texto, bordes */
+      background-color: #2D4263;
+      border: solid 1px rgb(160, 219, 253);
+      color:rgb(255, 255, 255);
+      float: left;
+      /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
+      font-weight: bold;
+      font-size: 10;
+      line-height: 2;
+      /* Definimos posición y tamaño */
+      margin-right: 10px;
+      padding-left: 9px;
+      padding-right: 9px;
+      
+   
+   }
+   
+   .pagnone {
+      /* Este elemento se usa para páginas no accesibles */
+      background-color: rgb(172, 172, 172);
+   }
+
+   .activarMobile {
+      display: block;
+   }
+
+   .tablaDesktop{
+      display: none;
+   }
+
+   .videosCont {
+      width: 320px;
+      height: 215px;
+   }
+
+   .comentarios {
+      color: white;
+      font-size: 12px;
+      font-style: italic;
+      width: 150px;
+      margin-left: 50px;
+   }
+
+   .Label {
+      width: 100px;
+   }
+
+   .inputBox {
+      width: 100px;
+   }
+
+   .textAreaDesktop{
+      display: none;
+   }
+
+   .inputBoxmensaje{
+      display: none;
+   }
+
+   .textAreaMobile {
+      display: block;
+   }
+
+   .botonesFormMobile {
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+   }
+
+   .botonFormulario {
+      padding-left: 9px;
+      padding-right: 9px;
+      margin-top: 10px;
+      width: 150px;
+   }
+
+   .tamañoTabla{
+      width: 300px;
+   }
+
+   .centrarForm{
+      justify-content:right;
+      width: 300px;
+   }
+
+   .LabelContacto {
+      width: 100px;
+   }
+
+   .inputBoxContacto {
+      width: 100px;
+   }
+   
+   
+   }
+   /* FIN DE MODO RESPONSIVE MOBILE */
