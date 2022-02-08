@@ -8,6 +8,15 @@
     <title>NFT Gaming</title>
     <link rel="shortcut icon" href="..\assets\img\ico.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/CSS" href="..\style.css">
+    <!-- Agregamos animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <script src="..\wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </head>
 
 <body>
@@ -15,19 +24,25 @@
     <!--COMENTARIO: Acá va el cuerpo de la página-->
     <header>
 
+        <div class="franja">
+            <span></span>
+        </div>
+
     <div class="centrarBanner">
+        <img class="gifLogo" src="..\assets\img\axie.gif" alt="GifAxies1" width="173px" height="108px">
         <img class="banner" src="..\assets\img\banner.png" alt="Banner NFT Gaming">
+        <img class="gifLogo" src="..\assets\img\axie2.gif" alt="GifAxies2" width="173px" height="108px">
     </div>
         
     
         <nav>
             <ul class="centrarMenu">
-                <li><a class="menu menuAnim" href="..\index.html">Noticias</a></li>
-                <li><a class="menu menuAnim" href="playtoearn.html"> List Play to Earn</a></li>
-                <li><a class="menu menuAnim" href="tokens.html"> Best tokens</a></li>
-                <li><a class="menu menuAnim" href="videos.html"> Videos NFT Gaming</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="..\index.html">Noticias</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="playtoearn.html"> Play to Earn</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="tokens.html"> Tokens</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="videos.html"> Videos NFT Gaming</a></li>
                 <li><a class="menuActivo menu menuAnim" href="publica.html"> Publica tu proyecto</a></li>
-                <li><a class="menu menuAnim" href="contactanos.html"> Contactanos</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="contactanos.html"> Contactanos</a></li>
             </ul>
 
             <div class="pagHambur">
@@ -35,21 +50,23 @@
                 <input type="checkbox" id="menuHamb">
                 <label class="colorHambur" for="menuHamb">☰</label>
                 <ul id="hoverHambur">
-                    <li><a class="menuH menuAnim" href="..\index.html">Noticias</a></li>
-                    <li><a class="menuH menuAnim" href="playtoearn.html"> List Play to Earn</a></li>
-                    <li><a class="menuH menuAnim" href="tokens.html"> Best tokens</a></li>
-                    <li><a class="menuH menuAnim" href="videos.html"> Videos NFT Gaming</a></li>
-                    <li><a class="menuH menuAnim" href="publica.html"> Publica tu proyecto</a></li>
-                    <li><a class="menuH menuAnim" href="contactanos.html"> Contactanos</a></li>
+                    <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="..\index.html">Noticias</a></li>
+                    <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="playtoearn.html"> Play to Earn</a></li>
+                    <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="tokens.html"> Tokens</a></li>
+                    <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="videos.html"> Videos NFT Gaming</a></li>
+                    <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="publica.html"> Publica tu proyecto</a></li>
+                    <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="contactanos.html"> Contactanos</a></li>
                 </ul>
             </div>
                     
             </nav>
     
 
-        <main>
-            <h1 class="tituloPagina">Publica tu proyecto</h1>
-        </main>
+            <main>
+                <div class="tituloPagina">
+                <h1 class="tituloStyle wow animate__animated animate__flip">Publica tu proyecto</h1>
+                </div>
+            </main>
     </header>
 
 
@@ -152,15 +169,11 @@
             <input class="botonFormulario pagAnim" type="reset" value="Limpiar formulario" />
             <input class="botonFormulario pagAnim" type="button" value="Sin acciones" />
             </div>
+            
         </form>
+    </fieldset>
     
     </div>
-
-
-
-
-    </fieldset>
-    <br>
 
 </section>
 
@@ -170,7 +183,7 @@
             <div class="redesSociales">
             <p class="tituloRedes"><b>Redes Sociales</p></b>
             
-                <ul>
+                <ul class="logosHorizontales">
                     <li class="logoRedes"><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Link a Facebook"></a></li>
     
                     <li class="logoRedes"><a href="https://web.telegram.org/" target="_blank"><img src="../assets/img/telegram.png" alt="Link a Telegram"></a></li>

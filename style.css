@@ -34,6 +34,7 @@
    justify-content:center;
    align-content: center;
    background-color: #1b0404;
+   padding-top: 20px;
    /* Definidmos como elemento de bloque */
    
    /* Definimos max Banner */
@@ -101,6 +102,7 @@
 
 
 .menuAnim:hover {
+   transition: all 1.2s;
    /* Efecto hover sobre "Nav Menu" */
 color: #cc7746;
 
@@ -114,7 +116,7 @@ color: #cc7746;
 .tituloPagina {
    /* Definimos colores */
    color:rgb(255, 255, 255);
-   background-color: #1A374D;
+   background-color: #061e31;
    /* Centramos Textos y definimos tamaño de fuente */
    text-align: center;
    font-size: 30px;
@@ -148,6 +150,19 @@ color: #cc7746;
    
 }
 
+.tituloStyle {
+      /* Definimos colores */
+      color:rgb(255, 255, 255);
+      /* Centramos Textos y definimos tamaño de fuente */
+      text-align: center;
+      font-size: 35px;
+      /* Posicionamos bloque y definimos ancho */
+      margin-bottom: 8px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /* Definimos estilo de borde redondeado */
+}
+
 .imgNoticiaContenido {
    /* Definimos posición */
    position:absolute;
@@ -178,6 +193,11 @@ color: #cc7746;
 
 .colorNoticia{
    color: rgb(255, 255, 255);
+}
+
+.franja {
+   background-color: rgb(11, 6, 41);
+   padding-bottom: 20px;
 }
 
 .noticiaActual{
@@ -293,6 +313,7 @@ color: #cc7746;
 }
 
 .pagAnim:hover {
+   transition: all 1s;
    /* Efecto hover sobre "Nº pag noticias" */
    color: rgb(255, 255, 255);
    background-color: grey;
@@ -318,10 +339,19 @@ footer {
 }
 
 .logoRedes {
-   /* Definimos posición de texto */
-   float: left;
    /* Definimos posición de box */
    padding-right: 18px;
+    /* Cambiamos todas las propiedades que hayan variado */
+    transition: all 0.8s;
+}
+
+.logoRedes:hover {
+   transform: scale(1.2, 1.2);
+}
+
+.logosHorizontales {
+   display: flex;
+   flex-direction: row;
 }
 
 
@@ -391,13 +421,16 @@ footer {
 }
  
 .linkWebAnim:hover {
+   transition: all 0.8s;
    /* Efecto hover sobre "Nº pag noticias" */
    color: rgb(255, 255, 255);
    background-color: rgb(0, 0, 0);
+   
 
    }
  
    .linkWebAnimInt:hover {
+      transition: all 0.8s;
       /* Efecto hover sobre "Nº pag noticias" */
       color: rgb(255, 255, 255);
       background-color: rgb(0, 0, 0);
@@ -442,6 +475,9 @@ form {
 }
 
 .formFondo {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
    background-color: rgb(49, 49, 49);
 }
 
@@ -479,6 +515,7 @@ form {
 }
 
 .botonFormularioAnim:hover {
+   transition: all 0.8s;
    /* Efecto hover sobre "Nav Menu" */
 color: rgb(255, 255, 255);
 background-color: grey;
@@ -532,7 +569,7 @@ footer {
 
 .container {
    display: grid; 
-   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-columns: 40% 40% 20%; 
    grid-template-rows: auto auto auto; 
    gap: 0px 0px; 
    grid-template-areas: 
@@ -568,7 +605,7 @@ header { grid-area: header; }
    flex-direction: row;
    padding-top: 20px;
    border-top: solid 1px white;
-   width: 400px;
+   width: auto;
    padding-bottom: 20px;
 }
 
@@ -589,10 +626,13 @@ header { grid-area: header; }
 /* Menu hamburguesa */
 
 #hoverHambur{
+   transition: all 1.2s;
    display: none;
+
  }
  
  input:checked  ~ #hoverHambur{
+   transition: all 1.2s;
    display:block;
  }
 
@@ -601,27 +641,23 @@ header { grid-area: header; }
  }
 
  .colorHambur {
+   display: none;
     color: white;
     font-size: 30px;
     border-radius: 5px;
     line-height: 30px;
     font-weight: bold;
-    text-align: center;
     user-select: none;
  }
 
  .pagHambur {
-   display: block;
    background: #1b0404;
    margin: 0;
    list-style: none;
-   border-bottom: 1px solid grey;
  }
 
  .menuH {
     display: flex;
-    width: 180px;
-    height: 50px;
    /* Definimos colores */
    color:rgb(247, 250, 217);
    /* Definimos bordes */
@@ -635,12 +671,12 @@ header { grid-area: header; }
    padding: 10px 15px 10px 15px;
    margin-top: 10px;
    margin-bottom: 10px;
-   background-color: #1A374D;
+   
    
 }
 
 .pagHambur {
-   display: none;
+   display: flex;
    justify-content:center;
    align-content: center;
    padding-bottom: 20px;
@@ -706,7 +742,8 @@ header { grid-area: header; }
 
    .pagHambur {
       display: flex;
-      justify-content:start;
+      flex-direction: column;
+      justify-content:center;
       align-content: center;
       padding-bottom: 10px;
       padding-left: 8px;
@@ -777,6 +814,10 @@ header { grid-area: header; }
       position:relative;
       
       
+   }
+
+   .colorHambur {
+      display: block;
    }
    
    .fechaNotActual {
@@ -868,19 +909,20 @@ header { grid-area: header; }
    }
 
    .comentarios {
+      text-align: center;
       color: white;
       font-size: 12px;
       font-style: italic;
-      width: 150px;
-      margin-left: 50px;
+      width: auto;
+      margin-left: 5px;
    }
 
    .Label {
-      width: 100px;
+      width: auto;
    }
 
    .inputBox {
-      width: 100px;
+      width: auto;
    }
 
    .textAreaDesktop{
@@ -913,7 +955,9 @@ header { grid-area: header; }
    }
 
    .centrarForm{
+      display: flex;
       justify-content:right;
+
       width: 300px;
    }
 
@@ -923,6 +967,10 @@ header { grid-area: header; }
 
    .inputBoxContacto {
       width: 100px;
+   }
+
+   .gifLogo {
+      display: none;
    }
    
    

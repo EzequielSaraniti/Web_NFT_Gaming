@@ -8,6 +8,18 @@
     <title>NFT Gaming</title>
     <link rel="shortcut icon" href="assets\img\ico.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/CSS" href="style.css">
+
+    <!-- Agregamos animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
 </head>
 
 <body>
@@ -15,19 +27,25 @@
     <!--COMENTARIO: Acá va el cuerpo de la página-->
     <header>
 
-    <div class="centrarBanner">
-        <img class="banner" src="assets\img\banner.png" alt="Banner NFT Gaming">
-    </div>
+        <div class="franja">
+            <span></span>
+        </div>
+
+        <div class="centrarBanner">
+            <img class="gifLogo" src="assets\img\axie.gif" alt="GifAxies1" width="173px" height="108px">
+            <img class="banner" src="assets\img\banner.png" alt="Banner NFT Gaming">
+            <img class="gifLogo" src="assets\img\axie2.gif" alt="GifAxies2" width="173px" height="108px">
+        </div>
         
     
         <nav>
             <ul class="centrarMenu">
                 <li><a class="menuActivo menu menuAnim" href="index.html">Noticias</a></li>
-                <li><a class="menu menuAnim" href="pages\playtoearn.html"> List Play to Earn</a></li>
-                <li><a class="menu menuAnim" href="pages\tokens.html"> Best tokens</a></li>
-                <li><a class="menu menuAnim" href="pages\videos.html"> Videos NFT Gaming</a></li>
-                <li><a class="menu menuAnim" href="pages\publica.html"> Publica tu proyecto</a></li>
-                <li><a class="menu menuAnim" href="pages\contactanos.html"> Contactanos</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\playtoearn.html"> Play to Earn</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\tokens.html"> Tokens</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\videos.html"> Videos NFT Gaming</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\publica.html"> Publica tu proyecto</a></li>
+                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\contactanos.html"> Contactanos</a></li>
             </ul>
 
         <div class="pagHambur">
@@ -35,12 +53,12 @@
             <input type="checkbox" id="menuHamb">
             <label class="colorHambur" for="menuHamb">☰</label>
             <ul id="hoverHambur">
-                <li><a class="menuH menuAnim" href="index.html">Noticias</a></li>
-                <li><a class="menuH menuAnim" href="pages\playtoearn.html"> List Play to Earn</a></li>
-                <li><a class="menuH menuAnim" href="pages\tokens.html"> Best tokens</a></li>
-                <li><a class="menuH menuAnim" href="pages\videos.html"> Videos NFT Gaming</a></li>
-                <li><a class="menuH menuAnim" href="pages\publica.html"> Publica tu proyecto</a></li>
-                <li><a class="menuH menuAnim" href="pages\contactanos.html"> Contactanos</a></li>
+                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="index.html">Noticias</a></li>
+                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\playtoearn.html"> Play to Earn</a></li>
+                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\tokens.html"> Tokens</a></li>
+                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\videos.html"> Videos NFT Gaming</a></li>
+                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\publica.html"> Publica tu proyecto</a></li>
+                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\contactanos.html"> Contactanos</a></li>
             </ul>
         </div>
                 
@@ -48,7 +66,9 @@
     
 
         <main>
-            <h1 class="tituloPagina">Noticias</h1>
+            <div class="tituloPagina">
+            <h1 class="tituloStyle wow animate__animated animate__flip">Noticias</h1>
+            </div>
         </main>
     </header>
 
@@ -59,7 +79,7 @@
 
     <div class="imgNoticia" >
         <img class="marcoNoticias" src="assets\img\marconoticias.jpg" alt="Marco Noticias" >
-        <img class="imgNoticiaContenido" src="assets\img\Axies.jpg" alt="Axie Infinity" width="394" height="210">
+        <img class="imgNoticiaContenido" src="assets\img\axies.jpg" alt="Axie Infinity" width="394" height="210">
     </div>
 
     <article Class="contenidoNoticia">
@@ -256,19 +276,18 @@
         <div class="redesSociales">
         <p class="tituloRedes"><b>Redes Sociales</p></b>
         
-            <ul>
-                <li class="logoRedes"><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.png" alt="Link a Facebook"></a></li>
-
-                <li class="logoRedes"><a href="https://web.telegram.org/" target="_blank"><img src="assets/img/telegram.png" alt="Link a Telegram"></a></li>
-
-                <li class="logoRedes "><a href="https://discord.com/" target="_blank"><img src="assets/img/discord.png" alt="Link a Discord"></a></li>
-
-                <li class="logoRedes"><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.png" alt="Link a Instagram"></a></li>
-
-            </ul>
-        
-        
-        <p class="derechos">©2022 NFT GAMING</p>
+        <!-- Nuevos Logos -->
+                <ul class="logosHorizontales">
+                    <li class="logoRedes"><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Link a Facebook"></a></li>
+    
+                    <li class="logoRedes"><a href="https://web.telegram.org/" target="_blank"><img src="../assets/img/telegram.png" alt="Link a Telegram"></a></li>
+    
+                    <li class="logoRedes "><a href="https://discord.com/" target="_blank"><img src="../assets/img/discord.png" alt="Link a Discord"></a></li>
+    
+                    <li class="logoRedes"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Link a Instagram"></a></li>
+    
+                </ul>
+            <h5 class="derechos">©2022 NFT GAMING</h5>
     </div>
     </footer>
 </div>
