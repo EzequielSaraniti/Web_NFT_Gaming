@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Gaming</title>
     <link rel="shortcut icon" href="assets\img\ico.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/CSS" href="style.css">
-
+    <!-- Agregamos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Agregamos nuestro archivo CSS -->
+    <link rel="stylesheet" type="text/CSS" href="css\style.css">
     <!-- Agregamos animaciones -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <script src="wow.min.js"></script>
+    <script src="js\wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -23,7 +25,7 @@
 </head>
 
 <body>
-    <div id="html" class="container">
+    <div id="html" class="containerP">
     <!--COMENTARIO: Acá va el cuerpo de la página-->
     <header>
 
@@ -33,36 +35,40 @@
 
         <div class="centrarBanner">
             <img class="gifLogo" src="assets\img\axie.gif" alt="GifAxies1" width="173px" height="108px">
-            <img class="banner" src="assets\img\banner.png" alt="Banner NFT Gaming">
+            <img src="assets\img\banner.png" alt="Banner NFT Gaming">
             <img class="gifLogo" src="assets\img\axie2.gif" alt="GifAxies2" width="173px" height="108px">
         </div>
-        
-    
-        <nav>
-            <ul class="centrarMenu">
-                <li><a class="menuActivo menu menuAnim" href="index.html">Noticias</a></li>
-                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\playtoearn.html"> Play to Earn</a></li>
-                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\tokens.html"> Tokens</a></li>
-                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\videos.html"> Videos NFT Gaming</a></li>
-                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\publica.html"> Publica tu proyecto</a></li>
-                <li><a class="menu menuAnim wow animate__animated animate__flipInX" href="pages\contactanos.html"> Contactanos</a></li>
-            </ul>
 
-        <div class="pagHambur">
-            <!-- Menu Hamburguesa -->
-            <input type="checkbox" id="menuHamb">
-            <label class="colorHambur" for="menuHamb">☰</label>
-            <ul id="hoverHambur">
-                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="index.html">Noticias</a></li>
-                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\playtoearn.html"> Play to Earn</a></li>
-                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\tokens.html"> Tokens</a></li>
-                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\videos.html"> Videos NFT Gaming</a></li>
-                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\publica.html"> Publica tu proyecto</a></li>
-                <li><a class="menuH menuAnim wow animate__animated animate__flipInX" href="pages\contactanos.html"> Contactanos</a></li>
-            </ul>
-        </div>
-                
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light fondoNav">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="colorBurger">☰</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX" href="pages\playtoearn.html">Play to Earn</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX" href="pages\tokens.html">Tokens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX" href="pages\videos.html">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX" href="pages\publica.html">Publica tu proyecto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX" href="pages\contactanos.html">Contactanos</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     
 
         <main>
@@ -74,81 +80,66 @@
 
     <br>
 <section>
-    <div class="mobileNoticia">
-    <div id="centrarNoticias">
 
-    <div class="imgNoticia" >
-        <img class="marcoNoticias" src="assets\img\marconoticias.jpg" alt="Marco Noticias" >
-        <img class="imgNoticiaContenido" src="assets\img\axies.jpg" alt="Axie Infinity" width="394" height="210">
+    <div class="centrarNoticias">
+
+    <div class="card mb-3 fondoNoticia" style="max-width: 900px;">
+        <div class="row g-0">
+          <div class="col-md-4 imgNoticiaMQ">
+            <img src="assets\img\axies.jpg " class="img-fluid rounded-start rounded imgNoticiaX" alt="Axie infinity">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+            <a class="card-title tituloNoticia menuAnim" href="#">Actualización de Axie Infinity Versión 1.1.2</a>
+              <p class="card-text colorNoticia">El parche 1.1.2 está EN VIVO, Esta actualización incluye nuevas funciones, mejoras y correcciones de errores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea libero inventore, officiis in repellat delectus consequatur perspiciatis ipsam rem? Expedita beatae molestias quasi veniam eius corrupti, debitis laudantium eaque? Sunt...</p>
+              <p class="card-text"><small class="text-muted colorFecha">Last updated 5 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <article Class="contenidoNoticia">
-        <h3 class="noticiaActual">Noticias Parche 1.1.2</h3>
-        <h5 class="fechaNotActual">10/01/2022 20:00hs</h5>
+    <div class="centrarNoticias">
 
-<div class="colorNoticia">
-    <p><b>Actualización de Axie Infinity Versión 1.1.2</b></p>
+        <div class="card mb-3 fondoNoticia" style="max-width: 900px;">
+            <div class="row g-0">
+              <div class="col-md-4 imgNoticiaMQ">
+                <img src="assets\img\axies.jpg " class="img-fluid rounded-start rounded imgNoticiaX" alt="Axie infinity">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                <a class="card-title tituloNoticia menuAnim" href="#">Actualización de Axie Infinity Versión 1.1.2</a>
+                  <p class="card-text colorNoticia">El parche 1.1.2 está EN VIVO, Esta actualización incluye nuevas funciones, mejoras y correcciones de errores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea libero inventore, officiis in repellat delectus consequatur perspiciatis ipsam rem? Expedita beatae molestias quasi veniam eius corrupti, debitis laudantium eaque? Sunt...</p>
+                  <p class="card-text"><small class="text-muted colorFecha">Last updated 5 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
     
-    <p>El parche 1.1.2 está EN VIVO, Esta actualización incluye nuevas funciones, mejoras y correcciones de errores como: <b>Nuevas Características:</b>
-    
-        <li>¡Los Axies han soltado sus alas! En lugar de flotar, ahora estarán de pie en la batalla. Adicionalmente
-            hemos agregado efectos de batalla. </li>
-        <li>El historial de partidas ahora se guarda en los servidores. </li>
-        <li>Agregamos un botón para rechazar todas las solicitudes de amistad. </li>
-        <li>Un nuevo mecanismo de captcha ha sido agregado para evitar comportamiento de bot. </li>
-    
+        </div>
 
-    <b>Mejoras y correcciones de errores</b>
-    
-        <li>El contador de cartas esta arreglado.</li>
-        <li>Se agregó un indicador visual del efecto debuff de Scarab.</li>
-        <li>SLP ahora se mostrará correctamente en el inventario del juego. El valor que se muestra no incluirá el SLP
-            reclamado anteriormente ni el saldo actual de la billetera.</li>
-        <li>El nombre del jugador en el juego ahora está sincronizado con el nombre de usuario de Marketplace.</li>
-        <li>Se corrigió el Error [403050] "Insufficient Permission error".</li>
-        <li>Se corrigió el problema de la imagen del Axie corrompido.</li>
-        <li>Se corrigió un error que causaba desconexiones en la última ronda.</li>
-    </p>
-</div>
-</article>
-</div>
-</div>
+        <div class="centrarNoticias">
 
-
-
-    <!---COMIENZA NUEVA NOTICIA-->
-    <br>
-    <br>
-    <div class="mobileNoticia">
-    <div id="centrarNoticias">
-
-    <div class="imgNoticia" >
-        <img class="marcoNoticias" src="assets\img\marconoticias.jpg" alt="Marco Noticias" >
-        <img class="imgNoticiaContenido" src="assets\img\cripto.jpg" alt="BITCOIN" width="394" height="210">
-    </div>
-    
-    <article Class="contenidoNoticia">
-        <h3 class="noticiaActual">Bitcoin y criptomonedas: se terminó la caída.</h3>
-        <h5 class="fechaNotActual">16/01/2022 20:30hs</h5>
-    
-        <div class="colorNoticia">
-        <p><b>Bitcoin y criptomonedas: se terminó la caída y no paran de subir</b></p>
+            <div class="card mb-3 fondoNoticia" style="max-width: 900px;">
+                <div class="row g-0">
+                  <div class="col-md-4 imgNoticiaMQ">
+                    <img src="assets\img\axies.jpg " class="img-fluid rounded-start rounded imgNoticiaX" alt="Axie infinity">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                    <a class="card-title tituloNoticia menuAnim" href="#">Actualización de Axie Infinity Versión 1.1.2</a>
+                      <p class="card-text colorNoticia">El parche 1.1.2 está EN VIVO, Esta actualización incluye nuevas funciones, mejoras y correcciones de errores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea libero inventore, officiis in repellat delectus consequatur perspiciatis ipsam rem? Expedita beatae molestias quasi veniam eius corrupti, debitis laudantium eaque? Sunt...</p>
+                      <p class="card-text"><small class="text-muted colorFecha">Last updated 5 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         
-        <p>Bitcoin y el resto de las criptomonedas vuelve a subir de precio. Qué pasará con la criptodivisa más valiosa de todo el ecosistema en el corto plazo y qué dos factores están mirando los expertos.</p>
-        <p>Las cotizaciones de las criptomonedas comienzan a subir, luego de sufrir continuas caídas. Bitcoin, la moneda digital más valiosa del ecosistema, cotiza a US$ 43.000 y muestra signos de recuperación.</p>
+            </div>
+    
 
-        <p>, la criptomoneda de la red de contratos inteligentes Ethereum, subió 5% y ronda los US$ 3.200.</p>
-            
-        <p>Otras criptomonedas como Binance Coin, Solana, Cardano, Luna, Polkadot, Avalanche y Polygon también subieron entre 4 y 10% este miércoles 12 de enero.</p>
-        <br>
-        <p><b>LOS 2 FACTORES QUE SUBEN EL PRECIO DE BITCOIN</b></p>
-        <p>Según un análisis de la plataforma Tradingview, el retroceso de precios terminó y si la tendencia continúa siendo alcista, Bitcoin alcanzará un nuevo máximo histórico de US$ 81.000.</p>
-        <p>Sin embargo, esta predicción podría no ser exacta: los expertos explican que los volúmenes de compraventa de Bitcoin en los exchanges son "delgados", por tanto, la criptomoneda no está exenta de sufrir movimientos drásticos e inesperados hacia arriba o hacia abajo.</p>
-        <p>Por otro lado, los analistas explican que las correcciones de Bitcoin no afectan a aquellos operadores del mercado que acumulan la criptomoneda desde hace ya varios años; sino que impacta directamente en aquellos pequeños inversores que venden sus activos por pánico y pierden dinero.</p>
-    </div>
-    </article>
-</div>
-</div>
+
 
 
 
@@ -291,6 +282,15 @@
     </div>
     </footer>
 </div>
+
+ <!-- BOOTSTRAP JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ 
+
 </body>
 
 </html>
