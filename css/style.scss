@@ -1,0 +1,808 @@
+
+
+* {
+    /* Reset de margenes, bordes, etc.. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* importamos font "Roboto" */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+ 
+ 
+ * {
+    /* Limpiamos márgenes y estilos provenientes de HTML */
+    text-decoration: none;
+    list-style-type: none;
+ }
+ 
+ 
+ * {
+    /* Seteamos Fonts "Rotobo" en toda la página */
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ #html {
+    /* Acomodamos la página para que siempre este centrada */
+ 
+    /* Color de fondo de la página */
+    background-color: #191919;
+ }
+ 
+ /* Centramos banner */
+ .centrarBanner {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+    background-color: #1b0404;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+ }
+ 
+ 
+ /* .centrarMenu{
+    display:flex;
+    justify-content:center;
+    align-content: space-evenly;
+    background-color: #1b0404;
+ }*/
+ 
+ /* Damos color de fondo al nav */
+ .fondoNav {
+    background-color: #1b0404 !important;
+ }
+ 
+ 
+ /* Damos color, peso y tamaño al menu */
+ .colorMenu {
+    color:rgb(247, 250, 217) !important;
+    font-weight: bold !important;
+    font-size: 17px !important;
+ }
+ 
+ /* Damos color y tamaño al menu burger */
+ .colorBurger {
+    color: #ffffff;
+    font-size: 2rem;
+ }
+ 
+ /* Centramos cambio de página 1 - 2 - 3 - Siguiente */
+ .centrarCambioPag{
+    display:flex;
+    justify-content:center;
+    align-content: space-evenly;
+ }
+ 
+ /* Animación al pasar mouse por ensima en botones Menu */
+ .menuAnim:hover {
+    transition: all 1.2s;
+    /* Efecto hover sobre "Nav Menu" */
+ color: #cc7746 !important;
+ }
+ 
+ /* Estilizamos el título de la página */
+ .tituloPagina {
+    /* Definimos colores */
+    color:rgb(255, 255, 255);
+    background-color: #061e31;
+    /* Centramos Textos y definimos tamaño de fuente */
+    text-align: center;
+    font-size: 30px;
+    /* Posicionamos bloque y definimos ancho */
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Definimos estilo de borde redondeado */
+ 
+ 
+ }
+ 
+ /* Definimos padding en img de noticias */
+ .imgNoticiaX {
+ padding-top: 30px;
+ padding-left: 3px;
+ }
+ 
+   
+ .imgNoticia {
+    /* NO USADA */
+    /* Definimos posición */
+    position:relative;
+    /* Definimos bloque en linea */
+    display: inline-block;
+    /* Definimos tamaño */
+    width: 450px;
+    height: 250px;
+ }
+ 
+ .marcoNoticias {
+    /* NO USADA */
+    /* Definimos posición */
+    position:absolute;
+    top: 0px; left: 0px;
+    /* Z index 1 para enviarlo al fondo */
+    z-index: 1;
+ 
+ }
+ 
+ /* Le damos estilo al H1 de la página */
+ .tituloStyle {
+       /* Definimos colores */
+       color:rgb(255, 255, 255);
+       /* Centramos Textos y definimos tamaño de fuente */
+       text-align: center;
+       font-size: 35px;
+       /* Posicionamos bloque y definimos ancho */
+       margin-bottom: 8px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       /* Definimos estilo de borde redondeado */
+ }
+ 
+ 
+ /* NO USADA */
+ .imgNoticiaContenido {
+    /* Definimos posición */
+    position:absolute;
+    top: 146px; left: 28px;
+    /* Z index 2 para enviarlo adelante */
+    z-index: 2;
+ }
+ 
+ /* NO USADA */
+ .contenidoNoticia {
+    /* Definimos tamaño */
+    width: 450px;
+    height: 500px;
+    /* Definimos estilos de texto */
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    /* Overflow para que el texto sobrante no se vea */
+    overflow: hidden;
+    /* Definimos bordes */
+    border: solid 1px rgb(255, 255, 255);
+    /* Definimos posición */
+    position:relative;
+    left: 40px;
+    /* Definimos bloque en linea */
+    display: inline-block;
+ 
+ }
+ 
+ /* Damos color al contenido de la noticia */
+ .colorNoticia{
+    color: rgb(255, 255, 255);
+ }
+ 
+ /* Creamos un div superior para dar efectos */
+ .franja {
+    background-color: rgb(11, 6, 41);
+    padding-bottom: 20px;
+ }
+ 
+ /* NO USADO */
+ .noticiaActual{
+    /* Usamos este elemento para un Titulo de noticia */
+    /* Definimos color de fondo y bordes */
+    background-color: #1A374D;
+    /* Tamaño del bloque*/
+    width: 450px;
+    height: 20px;
+    /* Estilos de texto */
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    /* Overflow para que el texto sobrante no se vea */
+    overflow: hidden;
+    /* Definimos bordes */
+    border: solid 1px #1A374D;
+    /* Definimos posición */
+    position:relative;
+ 
+ 
+ }
+ 
+ /* NO USADO */
+ .fechaNotActual {
+    /* Usamos este elemento para la fecha de la noticia */
+    color: rgb(247, 250, 217);
+    /* Definimos color de fondo y bordes */
+    background-color: #6998AB;
+    border: solid 1px black;
+    /* Tamaño del bloque*/
+    width: 430px;
+    height: 20px;
+    /* Estilos de texto */
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    /* Posición del bloque */
+    margin-top: 2px;
+    margin-left: 10px;
+    position:relative;
+    /* Overflow para que el texto sobrante no se vea */
+    overflow: hidden;
+    /* Definimos bordes redondeados */
+    border-radius: 20px;
+ 
+ }
+ 
+ /* Centramos el cambio de pag y definimos magenes y padd */
+ .cambioPag {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    /* Definimos ancho del bloque */
+    /* Definimos ancho y alto del padding */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+ 
+ }
+ 
+ /* Estilos de pag prev (cambio de pag) */
+ .pagPrev {
+    /* Definimos color de fondo, texto, bordes */
+    color:rgb(255, 255, 255);
+    background-color: rgb(10, 15, 66);
+    border: solid 1px rgb(160, 219, 253);
+    float: left;
+    /* Definimos posición y tamaño */
+    margin-right: 50px;
+    padding-left: 9px;
+    padding-right: 9px;
+    /* Definimos estilos de fuente */
+    font-weight: bold;
+    font-size: 10;
+    line-height: 2;
+ }
+ 
+ /* Estilos de cambio de pag */
+ .Pag {
+    /* Definimos color de fondo, texto, bordes */
+    background-color: #2D4263;
+    border: solid 1px rgb(160, 219, 253);
+    color:rgb(255, 255, 255);
+    float: left;
+    /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
+    font-weight: bold;
+    font-size: 10;
+    line-height: 2;
+    /* Definimos posición y tamaño */
+    margin-right: 50px;
+    padding-left: 9px;
+    padding-right: 9px;
+ 
+ 
+ }
+ 
+ /* Estilo de pag actual */
+ .pagnone {
+    /* Este elemento se usa para páginas no accesibles */
+    background-color: rgb(172, 172, 172);
+ }
+ 
+ /* Animación de cambio de pag */
+ .pagAnim:hover {
+    transition: all 1s;
+    /* Efecto hover sobre "Nº pag noticias" */
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    }
+ 
+ /* Damos padding TOP al comienzo de footer */
+ .redesSociales {
+    padding-top: 20px;
+ }
+ 
+ /* Damos color de fondo al footer */
+ footer {
+    background-color: #1b0404;
+ }
+ 
+ /* Damos estilo a la palabra "Redes Sociales" */
+ .tituloRedes {
+    /* Definimos estilos de fuente */
+    font-size: 20px;
+    text-align: center;
+    /* Definimos Color de letra */
+    color: #ffffff;
+ }
+ 
+ /* Definimos tiempo de animación y distancia entre logos */
+ .logoRedes {
+    /* Definimos posición de box */
+    padding-right: 18px;
+     /* Cambiamos todas las propiedades que hayan variado */
+     transition: all 0.8s;
+ }
+ 
+ /* Animación de logos */
+ .logoRedes:hover {
+    transform: scale(1.2, 1.2);
+ }
+ 
+ /* orientamos los logos de forma horizontal */
+ .logosHorizontales {
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ /* Damos estilos a los derechos de Copy */
+ .derechos {
+    /* Definimos posición, negrita y color de texto */
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 30px;
+ }
+ 
+ /* Damos estilo al título de la noticia */
+ .tituloNoticia{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: #dfdbab;
+ }
+ 
+ /* Damos estilo al fondo de la noticia */
+ .fondoNoticia {
+    background-color: #1b0404 !important;
+    border: #ffffff 1px solid;
+    margin-left: 30px;
+    margin-right: 30px;
+ }
+ 
+ /* damos color a la font de la noticia */
+ .colorNoticia {
+    color: #ffffff;
+ }
+ 
+ /* Damos color a la font de la fecha de noticia */
+ .colorFecha {
+    color: rgb(241, 235, 226) !important;
+ }
+ 
+ /* Definimos Flex y centramos */
+ .centrarNoticias {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 50px;
+ }
+ 
+ /* Definimos padding al logo de la tabla */
+ .logoTabla {
+    padding-left: 10px;
+ }
+ 
+ /* Definimos estilos al link de la tabla */
+ .linkWeb {
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    color:#c5c3b0;
+ }
+ 
+ /* Animación del link de la tabla */
+ .linkWebAnim:hover {
+    transition: all 0.8s;
+    /* Efecto hover sobre "Nº pag noticias" */
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+ }
+ 
+ /* Definimos flex, filas, responsive según ancho y espacios entre si */
+ .videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+ 
+ /* Definimos ancho y alto del video. También espacios entre si. */
+ .videosCont {
+    width: 450;
+    height: 315;
+    padding: 15px 15px 15px 15px;
+ }
+ 
+ /* Definimos estilos de subtilos de videos */
+ .subTitulo {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+ }
+ 
+ /* Definimos color al label del formulario */
+ .form-label {
+    color: #ffffff;
+ }
+ 
+ /* Definimos color al label del formulario "Check"  */
+ .form-check-label{
+    color: #ffffff;
+ }
+ 
+ /* Definimos ancho máx del input (Responsive) */
+ .form-control {
+    max-width: 98% !important;
+ }
+ 
+ /* Definimos ancho máx del input (Responsive) */
+ .boxMensaje {
+    width: 98%;
+ }
+ 
+ /* Definimos flex al footer y lo centramos */
+ footer {
+    display:flex;
+    justify-content:center;
+ }
+ 
+ /* Aplicamos grids a nuestra página */
+ .containerP {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "section section aside"
+      "footer footer footer";
+  }
+ 
+  /* Aplicamos grids a nuestra página */
+  .containerSinAside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "section section section"
+      "footer footer footer";
+  }
+ 
+  /* Aplicamos grids a nuestra página */
+ section { grid-area: section; }
+ aside { grid-area: aside; }
+ footer { grid-area: footer; }
+ header { grid-area: header; }
+ 
+ /* Definimos flex y le damos estilo al titulo del aside */
+ .tituloAside {
+    display:flex;
+    color: white;
+    margin-bottom: 20px;
+ }
+ 
+ 
+ /* Definimos flex y le damos estilo al contenedor del aside */
+ .contenedorAside {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    border-top: solid 1px white;
+    width: auto;
+    padding-bottom: 20px;
+ }
+ 
+ /* Definimos flex y le damos estilo al contenido del aside */
+ .contenidoAside {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+ }
+ 
+ /* Definimos posición del buscadory margenes */
+ .buscador {
+    margin-bottom: 20px;
+ 
+ }
+ 
+ /* Media query Mobile */
+ @media screen and (max-width: 550px) {
+    .container {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: auto auto auto;
+       gap: 0px 0px;
+       grid-template-areas:
+         "header header header"
+         "section section section"
+         "footer footer footer";
+     }
+    aside {
+       display: none;
+    }
+ 
+    .menu {
+       display: none;
+    }
+ 
+    .pagHambur {
+       display: flex;
+       flex-direction: column;
+       justify-content:center;
+       align-content: center;
+       padding-bottom: 10px;
+       padding-left: 8px;
+    }
+ 
+    #centrarNoticias {
+       display:flex;
+       flex-direction:column;
+       justify-content: center;
+    }
+ 
+    .mobileNoticia {
+       display:flex;
+       justify-content: center;
+    }
+ 
+ 
+ 
+    .marcoNoticias {
+       display: none;
+    }
+ 
+    .imgNoticiaContenido{
+       width: 280px;
+       height: 220px;
+       /* Definimos posición */
+       position:absolute;
+       top: 0%; left: 20%;
+       /* Z index 2 para enviarlo adelante */
+       z-index: 2;
+    }
+ 
+    .contenidoNoticia{
+          /* Definimos tamaño */
+          width: 280px;
+          height: 750px;
+          /* Definimos estilos de texto */
+          text-align: center;
+          font-size: 12px;
+          line-height: 1.5;
+          /* Overflow para que el texto sobrante no se vea */
+          overflow: hidden;
+          /* Definimos bordes */
+          border: solid 1px rgb(255, 255, 255);
+          /* Definimos posición */
+          position:relative;
+          left: 20%;
+          /* Definimos bloque en linea */
+          display: inline-block;
+    }
+ 
+    .noticiaActual{
+       /* Usamos este elemento para un Titulo de noticia */
+       /* Definimos color de fondo y bordes */
+       background-color: #1A374D;
+       /* Tamaño del bloque*/
+       width: 280px;
+       height: 40px;
+       /* Estilos de texto */
+       text-align: center;
+       font-size: 14px;
+       color: #ffffff;
+       /* Overflow para que el texto sobrante no se vea */
+       overflow: hidden;
+       /* Definimos bordes */
+       border: solid 1px #1A374D;
+       /* Definimos posición */
+       position:relative;
+ 
+ 
+    }
+ 
+    .colorHambur {
+       display: block;
+    }
+ 
+    .fechaNotActual {
+       /* Usamos este elemento para la fecha de la noticia */
+       color: rgb(247, 250, 217);
+       /* Definimos color de fondo y bordes */
+       background-color: #6998AB;
+       border: solid 1px black;
+       /* Tamaño del bloque*/
+       width: 260px;
+       height: 20px;
+       /* Estilos de texto */
+       font-size: 13px;
+       font-style: italic;
+       text-align: center;
+       /* Posición del bloque */
+       margin-top: 2px;
+       margin-left: 10px;
+       position:relative;
+       /* Overflow para que el texto sobrante no se vea */
+       overflow: hidden;
+       /* Definimos bordes redondeados */
+       border-radius: 20px;
+ 
+    }
+ 
+    .cambioPag {
+       display: flex;
+       justify-content:center;
+       align-content: center;
+       /* Definimos ancho del bloque */
+       /* Definimos ancho y alto del padding */
+       padding-top: 10px;
+       padding-bottom: 10px;
+       margin-left: 10%;
+    }
+ 
+    .pagPrev {
+       /* Definimos color de fondo, texto, bordes */
+       color:rgb(255, 255, 255);
+       background-color: rgb(10, 15, 66);
+       border: solid 1px rgb(160, 219, 253);
+       float: left;
+       /* Definimos posición y tamaño */
+       margin-right: 10px;
+       margin-left: -30px;
+       padding-left: 9px;
+       padding-right: 9px;
+       /* Definimos estilos de fuente */
+       font-weight: bold;
+       font-size: 10;
+       line-height: 2;
+    }
+ 
+    .Pag {
+       /* Definimos color de fondo, texto, bordes */
+       background-color: #2D4263;
+       border: solid 1px rgb(160, 219, 253);
+       color:rgb(255, 255, 255);
+       float: left;
+       /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
+       font-weight: bold;
+       font-size: 10;
+       line-height: 2;
+       /* Definimos posición y tamaño */
+       margin-right: 10px;
+       padding-left: 9px;
+       padding-right: 9px;
+ 
+ 
+    }
+ 
+    .pagnone {
+       /* Este elemento se usa para páginas no accesibles */
+       background-color: rgb(172, 172, 172);
+    }
+ 
+    .activarMobile {
+       display: block;
+    }
+ 
+    .tablaDesktop{
+       display: none;
+    }
+ 
+    .videosCont {
+       width: 320px;
+       height: 215px;
+    }
+ 
+    .comentarios {
+       text-align: center;
+       color: white;
+       font-size: 12px;
+       font-style: italic;
+       width: auto;
+       margin-left: 5px;
+    }
+ 
+    .Label {
+       width: auto;
+    }
+ 
+    .inputBox {
+       width: auto;
+    }
+ 
+    .textAreaDesktop{
+       display: none;
+    }
+ 
+    .inputBoxmensaje{
+       display: none;
+    }
+ 
+    .textAreaMobile {
+       display: block;
+    }
+ 
+    .botonesFormMobile {
+       display:flex;
+       flex-direction:column;
+       justify-content: center;
+    }
+ 
+    .botonFormulario {
+       padding-left: 9px;
+       padding-right: 9px;
+       margin-top: 10px;
+       width: 150px;
+    }
+ 
+    .tamañoTabla{
+       width: 300px;
+    }
+ 
+    .centrarForm{
+       display: flex;
+       justify-content:right;
+ 
+       width: 300px;
+    }
+ 
+    .LabelContacto {
+       width: 100px;
+    }
+ 
+    .inputBoxContacto {
+       width: 100px;
+    }
+ 
+    .gifLogo {
+       display: none;
+    }
+ 
+ 
+    }
+    /* FIN DE MODO RESPONSIVE MOBILE */
+ 
+ /* Responsive con Bootstrap */
+ 
+    /*sm` applies to x-small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+ 
+  }
+ 
+  /* `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) {
+ 
+  }
+ 
+  /* `lg` applies to medium devices (tablets, less than 992px) */
+ @media (max-width: 991.98px) {
+ 
+  }
+ 
+  /* `xl` applies to large devices (desktops, less than 1200px) */
+ @media (max-width: 1199.98px) {
+ 
+  }
+ 
+  /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+ @media (max-width: 1399.98px) {
+ 
+  }
+
+  @import '_variables';
+
+  .centrarBanner{
+     .gifLogo{
+        max-width: 173px;
+        max-height: 108px;
+        width: 98%;
+        height: 98%;
+     }
+  }
+
+  
+
