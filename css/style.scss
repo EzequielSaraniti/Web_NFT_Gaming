@@ -10,6 +10,8 @@
  /* importamos font "Roboto" */
  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
  
+ @import '_variables';
+ @import '_utils';
  
  * {
     /* Limpiamos márgenes y estilos provenientes de HTML */
@@ -257,7 +259,7 @@
     padding-left: 9px;
     padding-right: 9px;
     /* Definimos estilos de fuente */
-    font-weight: bold;
+    @include negrita;
     font-size: 10;
     line-height: 2;
  }
@@ -270,7 +272,7 @@
     color:rgb(255, 255, 255);
     float: left;
     /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
-    font-weight: bold;
+    @include negrita;
     font-size: 10;
     line-height: 2;
     /* Definimos posición y tamaño */
@@ -338,7 +340,7 @@
  .derechos {
     /* Definimos posición, negrita y color de texto */
     text-align: center;
-    font-weight: bold;
+    @include negrita;
     color: #ffffff;
     padding-bottom: 30px;
  }
@@ -386,7 +388,7 @@
  .linkWeb {
     text-decoration: none;
     list-style-type: none;
-    font-weight: bold;
+    @include negrita;
     color:#c5c3b0;
  }
  
@@ -656,7 +658,7 @@
        padding-left: 9px;
        padding-right: 9px;
        /* Definimos estilos de fuente */
-       font-weight: bold;
+       @include negrita;
        font-size: 10;
        line-height: 2;
     }
@@ -668,7 +670,7 @@
        color:rgb(255, 255, 255);
        float: left;
        /* Definimos estilos de fuente, negrita, tamaño, espacio, peso */
-       font-weight: bold;
+       @include negrita;
        font-size: 10;
        line-height: 2;
        /* Definimos posición y tamaño */
@@ -793,16 +795,22 @@
  
   }
 
-  @import '_variables';
-
   .centrarBanner{
      .gifLogo{
         max-width: 173px;
         max-height: 108px;
         width: 98%;
         height: 98%;
+
      }
   }
+
+  .tituloPagina {
+     
+   background-color: $fondoAzulOscuro;
+
+}
+
 
   
 

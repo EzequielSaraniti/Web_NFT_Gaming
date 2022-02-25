@@ -1,0 +1,11 @@
+@import '_variables';
+
+@mixin negrita {
+    font-weight: bold;
+}
+
+@for $i from 1 to 11 {
+    .ancho-#{$i} {
+        width: map-get($tamano, $i);
+    }
+ }

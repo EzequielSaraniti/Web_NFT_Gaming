@@ -1,0 +1,7 @@
+*TITULOS: Modifique el titulo de cada página individualmente, refiriendome al sector en específico donde estamos ubicados.
+- NFT Gaming - Noticias - Play To Earn
+En todos indicando el nombre de la página en primero lugar, luego el sector donde me encuentro y por último el tema al que esta abocado esta página.
+
+*DESCRIPCIONES: En las descripciones trate de ser lo mas descriptivo posible con pocas palabras, sobre cada página individualmente para marcar con pocas palabras el sitio donde necesitan entrar.
+
+*PALABRAS CLAVES: Las palabras claves fueron tipeadas, imaginando en mi cabeza, que palabras tipearía yo para buscar una página referida a los juegos NFT, cada página tiene palabras claves con referencia a su sección en particular.
