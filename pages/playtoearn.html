@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descripción de página -->
   <meta name="descriptions" content="NFTGaming.com - Todos los juegos NFT, categorizados por confiabilidad, tokens, estado de desarrollo, guías, red utilizada y mucho mas..">
+  <!-- Keywords para SEO -->
   <meta name="keywords" content="NFT Gaming, Criptomonedas, play to earn, nft, metaverso, juegos nft, mundo nft, juegos nft, axie infinity, guía juegos nft, mejores juegos nft, como jugar con un nft, todos los juegos NFT, como ganar plata con criptomonedas">
 
   <!-- Titulo de la página -->
@@ -78,6 +80,10 @@
               <li class="nav-item">
                 <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
                   href="contactanos.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="cerrar nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
+                  href="#">Cerrar</a>
               </li>
 
             </ul>
@@ -153,7 +159,7 @@
 
             <!-- Contenido de la tabla -->
             <tr>
-              <th scope="row"><img class="logoTabla" src="../assets/img/LogoSandbox.jpg" alt="LogoAxies"></th>
+              <th scope="row"><img class="logoTabla" src="../assets/img/LogoElemon.jpg" alt="LogoAxies"></th>
               <td>Elemon</td>
               <td>V. Oficial</td>
               <td>100%</td>
@@ -212,6 +218,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <!-- Función jQuery para cerrar el navbar automáticamente -->
+  <script>
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
+  </script>
 
 
 </body>

@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descripción de página -->
   <meta name="descriptions" content="NFTGaming.com - Tokens del mundo NFT Gaming - Play to Earn - Precios - Análisis de contratos - Exchange para comprarlos.">
+  <!-- Keywords para SEO -->
   <meta name="keywords" content="NFT Gaming, Criptomonedas, play to earn, nft, metaverso, tokens nft, tokens play to earn, mundo nft, juegos nft, tokens juegos nft, tokens axie infinity, axie infinity, ultimos tokens nft, mejores tokens nft">
 
   <!-- Titulo de la página -->
@@ -79,6 +81,10 @@
                 <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
                   href="contactanos.html">Contactanos</a>
               </li>
+              <li class="nav-item">
+                <a class="cerrar nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
+                  href="#">Cerrar</a>
+              </li>
 
             </ul>
           </div>
@@ -123,7 +129,7 @@
 
               <!-- Contenido de la tabla -->
               <tr>
-                <th scope="row"><img class="logoTabla" src="../assets/img/LogoDrake.jpg" alt="LogoAxies"></th>
+                <th scope="row"><img class="logoTabla" src="../assets/img/LogoAxies.jpg" alt="LogoAxies"></th>
                 <td>Axie Infinity</td>
                 <td>AXS</td>
                 <td>70U$</td>
@@ -135,7 +141,7 @@
 
               <!-- Contenido de la tabla -->
               <tr>
-                <th scope="row"><img class="logoTabla" src="../assets/img/LogoSandbox.jpg" alt="LogoAxies"></th>
+                <th scope="row"><img class="logoTabla" src="../assets/img/LogoDrake.jpg" alt="LogoAxies"></th>
                 <td>Drakeball</td>
                 <td>DBS</td>
                 <td>U$2,0395</td>
@@ -206,6 +212,14 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <!-- Función jQuery para cerrar el navbar automáticamente -->
+  <script>
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
+  </script>
 
 </body>
 

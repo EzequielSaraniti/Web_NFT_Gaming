@@ -105,8 +105,9 @@
  
  /* Definimos padding en img de noticias */
  .imgNoticiaX {
- padding-top: 30px;
- padding-left: 3px;
+ padding-top: 40px;
+ padding-left: 20px;
+ margin-bottom: 40px;
  }
  
    
@@ -360,6 +361,11 @@
     margin-left: 30px;
     margin-right: 30px;
  }
+
+ .intTarjeta{
+    margin-bottom: 30px;
+    margin-left: 30px;
+ }
  
  /* damos color a la font de la noticia */
  .colorNoticia {
@@ -425,22 +431,36 @@
  
  /* Definimos color al label del formulario */
  .form-label {
+   margin-left: 2%;
     color: #ffffff;
+ }
+
+ .form-text{
+   margin-left: 2%;
  }
  
  /* Definimos color al label del formulario "Check"  */
  .form-check-label{
+    
     color: #ffffff;
  }
+
+ .form-check{
+    margin-left: 2%;
+ }
+
  
  /* Definimos ancho máx del input (Responsive) */
  .form-control {
-    max-width: 98% !important;
+    margin-left: 2%;
+    max-width: 96% !important;
  }
+
  
  /* Definimos ancho máx del input (Responsive) */
  .boxMensaje {
-    width: 98%;
+   margin-left: 2%;
+    width: 96%;
  }
  
  /* Definimos flex al footer y lo centramos */
@@ -513,7 +533,7 @@
  
  /* Media query Mobile */
  @media screen and (max-width: 550px) {
-    .container {
+    .containerP {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
        grid-template-rows: auto auto auto;
@@ -767,33 +787,108 @@
  
     }
     /* FIN DE MODO RESPONSIVE MOBILE */
+
+    .cerrar {
+       display: none;
+    }
  
  /* Responsive con Bootstrap */
  
     /*sm` applies to x-small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) {
+   .containerP {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 0px 0px;
+      grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    }
+   aside {
+      display: none;
+   }
+
+   .cerrar {
+      display: block;
+   }
  
   }
  
   /* `md` applies to small devices (landscape phones, less than 768px) */
  @media (max-width: 767.98px) {
+   .containerP {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 0px 0px;
+      grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    }
+   aside {
+      display: none;
+   }
+
+   .cerrar {
+      display: block;
+   }
  
   }
  
   /* `lg` applies to medium devices (tablets, less than 992px) */
  @media (max-width: 991.98px) {
+   .containerP {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 0px 0px;
+      grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    }
+   aside {
+      display: none;
+   }
+
+   .cerrar {
+      display: block;
+   }
  
   }
  
   /* `xl` applies to large devices (desktops, less than 1200px) */
  @media (max-width: 1199.98px) {
+   .containerP {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 0px 0px;
+      grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    }
+   aside {
+      display: none;
+   }
+
+
  
   }
+
+     /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+     @media (max-width: 1399.98px) {
+
  
-  /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
- @media (max-width: 1399.98px) {
+   }
  
-  }
+
+ 
+  
 
   .centrarBanner{
      .gifLogo{
@@ -811,6 +906,15 @@
 
 }
 
+.titleAside{
+   text-decoration: none;
+   list-style-type: none;
+   color: #dfdbab;
+   margin-left: 15px;
+}
 
-  
+.fotoAside{
+   margin-top: 0.2%;
+   
+}
 
