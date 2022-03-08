@@ -86,6 +86,7 @@
 /* Damos color de fondo al nav */
 .fondoNav {
   background-color: #1b0404 !important;
+  box-shadow: 0px 2px 2px black;
 }
 
 /* Damos color, peso y tamaño al menu */
@@ -128,6 +129,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   /* Definimos estilo de borde redondeado */
+  box-shadow: 0px 5px 5px black;
 }
 
 /* Definimos padding en img de noticias */
