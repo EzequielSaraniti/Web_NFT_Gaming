@@ -867,3 +867,15 @@ header {
   position: fixed;
   z-index: 1;
 }
+
+.transparenciaTable {
+  opacity: 0.9;
+}
+
+.form-control {
+  opacity: 0.3;
+}
+
+.form-control:hover {
+  opacity: 1;
+}
