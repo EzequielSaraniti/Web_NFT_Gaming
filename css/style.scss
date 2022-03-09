@@ -938,6 +938,20 @@
    opacity: 0.3;
 }
 
-.form-control:hover{
+.form-control:focus{
+   transition: all 2s;
    opacity: 1;
 }
+.submit {
+   background-color: #414142;
+   border-color: #ffffff;
+   margin-left: 2%;
+   margin-bottom: 30px;
+
+   &:hover{
+      background-color: #6998AB;
+      border-color: #1b0404;
+   }
+}
+
+

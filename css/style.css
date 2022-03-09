@@ -72,7 +72,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: #1a1616;
+  background-color: #1b0404;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -86,7 +86,7 @@
  }*/
 /* Damos color de fondo al nav */
 .fondoNav {
-  background-color: #1a1616 !important;
+  background-color: #1b0404 !important;
   box-shadow: 0px 2px 2px black;
 }
 
@@ -328,7 +328,7 @@
 
 /* Damos color de fondo al footer */
 footer {
-  background-color: #1a1616;
+  background-color: #1b0404;
 }
 
 /* Damos estilo a la palabra "Redes Sociales" */
@@ -876,6 +876,19 @@ header {
   opacity: 0.3;
 }
 
-.form-control:hover {
+.form-control:focus {
+  transition: all 2s;
   opacity: 1;
+}
+
+.submit {
+  background-color: #414142;
+  border-color: #ffffff;
+  margin-left: 2%;
+  margin-bottom: 30px;
+}
+
+.submit:hover {
+  background-color: #6998AB;
+  border-color: #1b0404;
 }
