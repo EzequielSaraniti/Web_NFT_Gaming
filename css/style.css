@@ -72,7 +72,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: #1b0404;
+  background-color: #202020;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -86,7 +86,7 @@
  }*/
 /* Damos color de fondo al nav */
 .fondoNav {
-  background-color: #1b0404 !important;
+  background-color: #202020 !important;
   box-shadow: 0px 2px 2px black;
 }
 
@@ -212,7 +212,7 @@
 
 /* Creamos un div superior para dar efectos */
 .franja {
-  background-color: #0b0629;
+  background-color: #18171a;
   padding-bottom: 20px;
 }
 
@@ -328,7 +328,7 @@
 
 /* Damos color de fondo al footer */
 footer {
-  background-color: #1b0404;
+  background-color: #202020;
 }
 
 /* Damos estilo a la palabra "Redes Sociales" */
